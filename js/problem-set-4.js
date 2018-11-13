@@ -3,8 +3,9 @@
  */
 
 function hello() {
-
-  // WRITE YOUR EXERCISE 1 CODE HERE
+    // WRITE YOUR EXERCISE 1 CODE HERE
+  var div = document.getElementById("output1");
+  div. innerHTML ="Hello, AP Computer Science Principles!";
 
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
@@ -16,7 +17,6 @@ function hello() {
  */
 
 function helloAgain() {
-
   //////////// DO NOT MODIFY
   let name; // DO NOT MODIFY
   //////////// DO NOT MODIFY
@@ -25,7 +25,9 @@ function helloAgain() {
   // do not need to re-declare it, only assign it a value.
 
   // WRITE YOUR EXERCISE 2 CODE HERE
-
+  name = prompt("Please Enter Your Name")
+  var div2 = document.getElementById("output2")
+  div2.innerHTML = "Hello, " + name + "!"
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY
@@ -40,11 +42,13 @@ function celsius() {
   //////////////////////////////////////////////////////// DO NOT MODIFY
   let cels = ((Math.random() * 1001) - 100).toFixed(2); // DO NOT MODIFY
   //////////////////////////////////////////////////////// DO NOT MODIFY
-
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 3 CODE HERE
+var fahrenheit= ((cels * 9/5)+32).toFixed(2)
+var div3=document.getElementById("output3")
+div3.innerHTML=(cels + " degrees Celsius equals " + fahrenheit + " degrees Fahrenheit.");
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
@@ -65,7 +69,9 @@ function fahrenheit() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 4 CODE HERE
-
+var celsius= ((fahr - 32) / (9/5)).toFixed(2);
+var div4=document.getElementById("output4")
+div4.innerHTML=(fahr + " degrees Fahrenheit equals " + celsius + " degrees Celsius.")
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY

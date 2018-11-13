@@ -95,10 +95,8 @@ function inches() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 5 CODE HERE
-var feet = (inches/12)
-var yards = (inches/36)
-var miles = (inches/63360)
-var div5
+var miles= 
+
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY

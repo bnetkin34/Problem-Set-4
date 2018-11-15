@@ -4,7 +4,7 @@
 
 function hello() {
     // WRITE YOUR EXERCISE 1 CODE HERE
-  var div = document.getElementById("output1");
+  let div = document.getElementById("output1");
   div. innerHTML ="Hello, AP Computer Science Principles!";
 
   ////////////////// DO NOT MODIFY
@@ -26,7 +26,7 @@ function helloAgain() {
 
   // WRITE YOUR EXERCISE 2 CODE HERE
   name = prompt("Please Enter Your Name")
-  var div2 = document.getElementById("output2")
+  let div2 = document.getElementById("output2")
   div2.innerHTML = "Hello, " + name + "!"
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
@@ -46,8 +46,8 @@ function celsius() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 3 CODE HERE
-var fahrenheit= ((cels * 9/5)+32).toFixed(2)
-var div3=document.getElementById("output3")
+let fahrenheit= ((cels * 9/5)+32).toFixed(2)
+let div3=document.getElementById("output3")
 div3.innerHTML=(cels + " degrees Celsius equals " + fahrenheit + " degrees Fahrenheit.");
 
   ////////////////////////// DO NOT MODIFY
@@ -69,8 +69,8 @@ function fahrenheit() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 4 CODE HERE
-var celsius= ((fahr - 32) / (9/5)).toFixed(2);
-var div4=document.getElementById("output4")
+let celsius= ((fahr - 32) / (9/5)).toFixed(2);
+let div4=document.getElementById("output4")
 div4.innerHTML=(fahr + " degrees Fahrenheit equals " + celsius + " degrees Celsius.")
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
@@ -95,9 +95,9 @@ function inches() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 5 CODE HERE
-var miles=Math.floor(inches/63360);
-var yards=Math.floor((inches - (miles*63360))/36);
-var feet=Math.floor((inches - (miles*63360) - (yards*36))/12);
+let miles=Math.floor(inches/63360);
+let yards=Math.floor((inches - (miles*63360))/36);
+let feet=Math.floor((inches - (miles*63360) - (yards*36))/12);
 inches=Math.floor((inches - (miles*63360) - (yards*36) - (feet*12))/1);
 document.getElementById("output5").innerHTML=("Miles: " + miles + "<br/>Yards: " + yards + "<br/>Feet: " + feet + "<br/>Inches: " + inches)
 
@@ -124,8 +124,8 @@ function centimeters() {
   /////////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 6 CODE HERE
-  var kilometers=Math.floor(centimeters/100000);
-  var meters=Math.floor((centimeters - (kilometers*100000))/100);
+  let kilometers=Math.floor(centimeters/100000);
+  let meters=Math.floor((centimeters - (kilometers*100000))/100);
   centimeters=Math.floor((centimeters - (kilometers*100000) - (meters*100))/1);
   document.getElementById("output6").innerHTML=("Kilometers: " + kilometers + "<br/>Meters: " + meters + "<br/>Centimeters: " + centimeters)
   /////////////////////////////// DO NOT MODIFY
@@ -151,10 +151,10 @@ function fluidOunces() {
   /////////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 7 CODE HERE
-  var gallons=Math.floor(fluidOunces/128);
-  var quarts=Math.floor((fluidOunces - (gallons*128))/32);
-  var pints=Math.floor((fluidOunces - (gallons*128) - (quarts*32))/16);
-  var cups=Math.floor((fluidOunces - (gallons*128) - (quarts*32) - (pints*16))/8);
+  let gallons=Math.floor(fluidOunces/128);
+  let quarts=Math.floor((fluidOunces - (gallons*128))/32);
+  let pints=Math.floor((fluidOunces - (gallons*128) - (quarts*32))/16);
+  let cups=Math.floor((fluidOunces - (gallons*128) - (quarts*32) - (pints*16))/8);
   fluidOunces=Math.floor((fluidOunces - (gallons*128) - (quarts*32) - (pints*16) - (cups*8))/1);
   document.getElementById("output7").innerHTML=("Gallons: " + gallons + "<br/>Quarts: " + quarts + "<br/>Pints: " + pints + "<br/>Cups: " + cups +"<br/>Fluid Ounces: " + fluidOunces)
   /////////////////////////////// DO NOT MODIFY
@@ -180,8 +180,8 @@ function ounces() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 8 CODE HERE
-  var tons=Math.floor(ounces/32000);
-  var pounds=Math.floor((ounces - (tons*32000))/16);
+  let tons=Math.floor(ounces/32000);
+  let pounds=Math.floor((ounces - (tons*32000))/16);
   ounces=Math.floor((ounces - (tons*32000) - (pounds*16))/1);
   document.getElementById("output8").innerHTML=("Tons: " + tons + "<br/>Pounds: " + pounds + "<br/>Ounces: " + ounces)
   ////////////////////////// DO NOT MODIFY
@@ -207,10 +207,10 @@ function money() {
   /////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 9 CODE HERE
-  var dollars=Math.floor(pennies/100);
-  var quarters=Math.floor((pennies - (dollars*100))/25);
-  var dimes=Math.floor((pennies - (dollars*100) - (quarters*25))/10);
-  var nickels=Math.floor((pennies - (dollars*100) - (quarters*25) - (dimes*10))/5);
+  let dollars=Math.floor(pennies/100);
+  let quarters=Math.floor((pennies - (dollars*100))/25);
+  let dimes=Math.floor((pennies - (dollars*100) - (quarters*25))/10);
+  let nickels=Math.floor((pennies - (dollars*100) - (quarters*25) - (dimes*10))/5);
   pennies=Math.floor((pennies - (dollars*100) - (quarters*25) - (dimes*10) -(nickels*5))/1);
   document.getElementById("output9").innerHTML=("Dollars: " + dollars + "<br/>Quarters: " + quarters + "<br/>Dimes: " + dimes + "<br/>Nickels: " + nickels +"<br/>Pennies: " + pennies)
   ///////////////////////// DO NOT MODIFY
@@ -237,10 +237,10 @@ function change() {
 
   // WRITE YOUR EXERCISE 10 CODE HERE
   amount*=100
-  var quarters=Math.floor((amount)/25);
-  var dimes=Math.floor((amount - (quarters*25))/10);
-  var nickels=Math.floor((amount - (quarters*25) - (dimes*10))/5);
-  var pennies=Math.floor((amount - (quarters*25) - (dimes*10) -(nickels*5))/1);
+  let quarters=Math.floor((amount)/25);
+  let dimes=Math.floor((amount - (quarters*25))/10);
+  let nickels=Math.floor((amount - (quarters*25) - (dimes*10))/5);
+  let pennies=Math.floor((amount - (quarters*25) - (dimes*10) -(nickels*5))/1);
   document.getElementById("output10").innerHTML=quarters+dimes+nickels+pennies+ " coins.";
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY

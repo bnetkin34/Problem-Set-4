@@ -207,7 +207,12 @@ function money() {
   /////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 9 CODE HERE
-
+  var dollars=Math.floor(pennies/100);
+  var quarters=Math.floor((pennies - (dollars*100))/25);
+  var dimes=Math.floor((pennies - (dollars*100) - (quarters*25))/10);
+  var nickels=Math.floor((pennies - (dollars*100) - (quarters*25) - (dimes*10))/5);
+  pennies=Math.floor((pennies - (dollars*100) - (quarters*25) - (dimes*10) -(nickels*5))/1);
+  document.getElementById("output9").innerHTML=("Dollars: " + dollars + "<br/>Quarters: " + quarters + "<br/>Dimes: " + dimes + "<br/>Nickels: " + nickels +"<br/>Pennies: " + pennies)
   ///////////////////////// DO NOT MODIFY
   check("money", input); // DO NOT MODIFY
   ///////////////////////// DO NOT MODIFY
@@ -231,7 +236,12 @@ function change() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 10 CODE HERE
-
+  amount*=100
+  var quarters=Math.floor((amount)/25);
+  var dimes=Math.floor((amount - (quarters*25))/10);
+  var nickels=Math.floor((amount - (quarters*25) - (dimes*10))/5);
+  var pennies=Math.floor((amount - (quarters*25) - (dimes*10) -(nickels*5))/1);
+  document.getElementById("output10").innerHTML=quarters+dimes+nickels+pennies+ " coins.";
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
